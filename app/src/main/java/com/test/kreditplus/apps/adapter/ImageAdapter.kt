@@ -40,7 +40,7 @@ class ImageAdapter(var context: Context?, var list:ArrayList<Image>) : RecyclerV
 //        dialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
 //        var  v = LayoutInflater.from(context).inflate(R.layout.image_larger)
 
-        val dialog = context?.let { Dialog(it, R.style.Theme_Design_Light) }
+        val dialog = context?.let { Dialog(it) }
         dialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
         val factory = LayoutInflater.from(context)
         val view: View = factory.inflate(R.layout.image_larger, null)
